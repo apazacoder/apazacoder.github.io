@@ -1,0 +1,110 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+@font-face {
+	font-family: 'Arvo';
+	src:  url('../fonts/arvo-regular-webfont.woff2') format('woff2'),
+	url('../fonts/arvo-regular-webfont.woff') format('woff');
+}
+body {
+	padding-top: 50px;
+}
+
+.jumbotron .btn-lg{
+	font-size: 24px;
+	margin: 25px 0;
+}
+.jumbotron{
+	background: url('../img/bg.jpg') fixed;
+	background-size: cover;
+}
+.jumbotron h1{
+	font: 5rem 'Arvo', serif;
+	padding-bottom: 30px;
+	margin-top: 0;
+}
+.seccion-inicio .glyphicon{
+	font-size: 3em;
+}
+h2, h3{
+	color: #e74c3c;
+	font: 2em 'Arvo', sans-serif;
+	text-transform: uppercase;
+}
+.separador-inicio{
+	margin: 0 auto 20px;
+	width: 120px;
+	border-top: 1px solid #e74c3c;
+}
+h3{
+	font-size: 1.6em;
+}
+.seccion-inicio{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.seccion-inicio p{
+	font-size: 1.2em;
+}
+.seccion-inicio .btn{
+	color: #e74c3c;
+}
+
+.seccion-inicio .btn:hover{
+	text-decoration: none;
+	opacity: .8;
+}
+
+.resaltar{
+	font-weight: bold;
+	color: #e74c3c;
+}
+.container-full{
+	background: #f5f5f5;
+}
+
+footer{
+	background: #e74c3c;
+	border: 1px solid transparent;
+	margin: 0;
+	padding: 20px 0;
+}
+
+footer .container{
+	margin-top: 70px;
+	color: #fff;
+}
+
+@media (max-width: 1199px) {
+	.jumbotron h1{
+		font-size: 4rem;
+	}
+	.seccion-inicio{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 991px){
+	.jumbotron h1{
+		font-size: 3.6rem;
+	}
+}
+@media (max-width: 767px) {
+	.jumbotron h1{
+		font-size: 2.6rem;
+	}
+	.jumbotron p{
+		font-size: 1.8rem;
+	}
+}
+
+
+/*@media (min-width: 769px) and (max-width: 991px) {*/
+	/*.jumbotron h1{*/
+		/*font-size:3.6rem;*/
+	/*}*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+	/*.jumbotron h1{*/
+		/*font-size:3.6rem;*/
+	/*}*/
+/*}*/
