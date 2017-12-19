@@ -73,6 +73,33 @@ footer .container{
 	color: #fff;
 }
 
+.boton-arriba{
+	border-radius: 50%;
+	color: #222;
+	font-size: 4rem;
+	position: fixed;
+	top: calc(100% - 50px);
+	right: 10px;
+	transition: .5s;
+	text-decoration: none;
+	z-index: 100;
+}
+.boton-arriba:visited{
+	text-decoration: none;
+}
+
+.boton-arriba:hover{
+	cursor: pointer;
+	text-shadow: 0 1px 1px #fff;
+	text-decoration: none;
+	color:#111;
+}
+.boton-arriba:focus{
+	text-decoration: none;
+	color:#111;
+}
+
+
 @media (max-width: 1199px) {
 	.jumbotron h1{
 		font-size: 4rem;

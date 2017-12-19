@@ -1,3 +1,5 @@
+<?php $dev = true;
+?>
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -11,7 +13,7 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css<?php echo ($dev) ? '?' . time() : ''; ?>">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv_min.js"></script>
@@ -19,8 +21,8 @@
 	<![endif]-->
 
 </head>
-<body>
-
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="55">
+<a class="glyphicon glyphicon glyphicon-circle-arrow-up boton-arriba" href="#inicio"></a>
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
@@ -31,7 +33,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">UN MILLÓN DE LÍNEAS</a>
+			<a class="navbar-brand" href="#inicio">UN MILLÓN DE LÍNEAS</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -43,7 +45,7 @@
 </nav>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
+<div class="jumbotron" id="inicio">
 	<div class="container text-center">
 		<h1>Nuestro objetivo es inspirar para que los estudiantes de la ciudad puedan escribir 1,000,000 de líneas de
 			código_ </h1>
@@ -62,7 +64,7 @@
 	<hr class="separador-inicio">
 	<p>Somos una <span class="resaltar">Academia Masiva.</span> Nuestro objetivo es mejorar la educación a través de
 		varios métodos, con educación basada en proyectos, para que así las habilidades sean aplicables en el
-		mejoramiento de tu vida actual.</p>
+		mejoramiento de tu vida actual. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam cupiditate delectus enim eum repellendus saepe similique tenetur? Assumenda commodi consectetur cum, cupiditate facere in placeat quos repudiandae sit sunt!</p>
 </div>
 <div class="container-full text-center seccion-inicio" id="involucrate">
 	<div class="container">
@@ -73,21 +75,21 @@
 				<span class="glyphicon glyphicon-user"></span>
 				<h3>Estudiantes</h3>
 				<p>¿Quieres aprender como codificar?, ayúdanos a llegar a <span class="resaltar">1,000,000 de líneas de código</span>.
-					Pulsa el botón de abajo y te daremos más información. </p>
+					Pulsa el botón de abajo y te daremos más información. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis dolor exercitationem facere, id ipsam magnam mollitia nemo nostrum nulla officiis, sint sunt tempora veritatis voluptate! Accusantium atque dolore nam. </p>
 				<p><a class="btn btn-default" href="#" role="button">Comienza a aprender &raquo;</a></p>
 			</div>
 			<div class="col-md-4">
 				<span class="glyphicon glyphicon-pencil"></span>
 				<h3>Educadores</h3>
 				<p>¿Quieres llevar la iniciativa a tu escuela ó institución? ¡Maravilloso!, Pulsa el botón de abajo y lo
-					haremos posible.</p>
+					haremos posible. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad distinctio eligendi error necessitatibus sint ullam voluptates? In, nobis rem! Autem beatae debitis dicta nam necessitatibus odio officiis quasi repellendus, sit? </p>
 				<p><a class="btn btn-default" href="#" role="button">Únete a la iniciativa &raquo;</a></p>
 			</div>
 			<div class="col-md-4">
 				<span class="glyphicon glyphicon-thumbs-up"></span>
 				<h3>Patrocinadores</h3>
 				<p>Apreciamos todo el apoyo para organizar más eventos, y potenciar más vidas con la habilidad de la
-					codificación. Pulsa el botón para involucrarte.</p>
+					codificación. Pulsa el botón para involucrarte. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, commodi cum cumque dolor error, esse fugiat illo inventore ipsam iure minus mollitia nostrum odio officia, omnis quis quo ratione repellendus?</p>
 				<p><a class="btn btn-default" href="patrocinio.php" role="button">Apóyanos &raquo;</a></p>
 			</div>
 		</div>
@@ -104,7 +106,7 @@
 <script src="js/vendor/jquery-1.12.0.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js<?php echo ($dev) ? '?' . time() : ''; ?>"></script>
 </body>
 </html>
 
